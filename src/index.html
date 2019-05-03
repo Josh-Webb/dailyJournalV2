@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Journal Version 2</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div id="journalInputField">
+        <form action="">
+            <fieldset>
+                <label for="journalDate">Date of entry</label>
+                <input type="date" name="journalDate" id="journalDate">
+            </fieldset>
+    
+            <fieldset>
+                <label for="conceptsCovered">Concepts covered</label>
+                <input type="text" name="conceptsCovered" id="conceptsCovered">
+            </fieldset>
+    
+    
+            <fieldset>
+                <label for="journalEntry">Journal Entry</label>
+                <textarea name="journalEntry" rows="10" cols="60" id="journalEntry">Be honest.</textarea>
+            </fieldset>
+    
+    
+            <fieldset>
+                <label for="mood">Mood</label>
+                <select id="moods"> <!--Change them to DMC ranking icons-->
+                    <option value="Awesome">Awesome!</option>
+                    <option value="Good">Good.</option>
+                    <option value="Fine">Fine.</option>
+                    <option value="Not great">Not great.</option>
+                    <option value="Pit of Despair!">PIT OF DESPAIR!</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for="youTubeURL">Music I'm Listening to Today</label>
+                <input type="text" name="musicURL" id="musicURL">
+            </fieldset>
+            <input type="submit"  value="Submit Journal" id="theButton" />
+        </form>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/t5kmjlYpmj8?controls=0" frameborder="0" allow="accelerometer; autoplay=1; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/api-java.js"></script>
+</body>
+</html>
